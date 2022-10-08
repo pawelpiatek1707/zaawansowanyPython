@@ -1,6 +1,8 @@
-from typing import Union
 import math
-from fastapi import FastAPI, Query, HTTPException
+from fastapi import FastAPI, Query, UploadFile, HTTPException, File
+from fastapi.responses import StreamingResponse
+from PIL import Image, ImageOps
+from io import BytesIO
 
 app = FastAPI()
 
@@ -40,3 +42,12 @@ def read_item(number: str = Query(max_length=3)):
     except ValueError:
         return_prime_exception(f"Wrong number type. Only int type ia acceptable")
 
+
+@app.post("/picture/invert")
+def invert_image(img: UploadFile = File(...)):
+    original_image = Image.open(img.file)
+    original_image = ImageOps.invert(original_image)
+    filtered_image = BytesIO()
+    original_image.save(filtered_image, "JPEG")
+    filtered_image.seek(0)
+    return StreamingResponse(filtered_image, media_type = "image/jpeg")
