@@ -1,8 +1,18 @@
 import math
-from fastapi import FastAPI, Query, UploadFile, HTTPException, File
+import datetime
+import os
+from fastapi import FastAPI, Query, UploadFile, HTTPException, File, Depends
 from fastapi.responses import StreamingResponse
+from fastapi.security import OAuth2PasswordBearer
 from PIL import Image, ImageOps
 from io import BytesIO
+from dotenv import load_dotenv
+
+# TODO
+# 1. Podzielić na bardziej sensowne pliki
+# 2. Przenieść token do evn
+
+load_dotenv()
 
 app = FastAPI()
 
@@ -10,6 +20,17 @@ MAX_VALUE = 9223372036854775807
 
 
 # python -m uvicorn main:app --reload
+
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
+
+
+def auth_request(token: str = Depends(oauth2_scheme)) -> bool:
+    print('token: ', token)
+    authenticated = token == os.getenv('API_TOKEN')
+    print(os.environ.get('API_TOKEN'))
+    return authenticated
+
 
 def is_prime(n: int):
     if n == 1:
@@ -24,11 +45,6 @@ def return_prime_exception(message: str):
     raise HTTPException(
         status_code=404, detail=message
     )
-
-
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
 
 
 @app.get("/prime/{number}")
@@ -51,3 +67,13 @@ def invert_image(img: UploadFile = File(...)):
     original_image.save(filtered_image, "JPEG")
     filtered_image.seek(0)
     return StreamingResponse(filtered_image, media_type = "image/jpeg")
+
+
+@app.get("/time")
+def return_time(authenticated: bool = Depends(auth_request)):
+    if not authenticated:
+        raise HTTPException(
+            status_code=401,
+            detail="Not authenticated")
+    now = datetime.datetime.now()
+    return {"time": f"{now.hour}:{now.minute}"}
