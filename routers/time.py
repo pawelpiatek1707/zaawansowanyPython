@@ -12,7 +12,6 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 def auth_request(token: str = Depends(oauth2_scheme)) -> bool:
     print('token: ', token)
     authenticated = token == os.getenv('API_TOKEN')
-    print(os.environ.get('API_TOKEN'))
     return authenticated
 
 
