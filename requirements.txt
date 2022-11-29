@@ -1,195 +1,195 @@
-absl-py
-aniso8601
-anyio
-argon2-cffi
-argon2-cffi-bindings
-astroid
-asttokens
-astunparse
-attrs
-autopep8
-backcall
-beautifulsoup4
-bleach
-Brotli
-cachetools
-certifi
-cffi
-charset-normalizer
-click
-cloudpickle
-colorama
-cycler
-dash
-dash-core-components
-dash-cytoscape
-dash-html-components
-dash-table
-debugpy
-decorator
-defusedxml
-dill
-docopt
-entrypoints
-et-xmlfile
-executing
+# absl-py
+# aniso8601
+# anyio
+# argon2-cffi
+# argon2-cffi-bindings
+# astroid
+# asttokens
+# astunparse
+# attrs
+# autopep8
+# backcall
+# beautifulsoup4
+# bleach
+# Brotli
+# cachetools
+# certifi
+# cffi
+# charset-normalizer
+# click
+# cloudpickle
+# colorama
+# cycler
+# dash
+# dash-core-components
+# dash-cytoscape
+# dash-html-components
+# dash-table
+# debugpy
+# decorator
+# defusedxml
+# dill
+# docopt
+# entrypoints
+# et-xmlfile
+# executing
 fastapi
-flasgger
-Flask
-Flask-Compress
-Flask-Cors
-Flask-PyMongo
-Flask-RESTful
-flask-swagger-ui
-flatbuffers
-fonttools
-gast
-gevent
-google-auth
-google-auth-oauthlib
-google-pasta
-greenlet
-grpcio
-gunicorn
-h11
-h5py
-httptools
-idna
-imageio
-imutils
-interpret
-interpret-core
-ipykernel
-ipython
-ipython-genutils
-ipywidgets
-isort
-itsdangerous
-jedi
-Jinja2
-joblib
-jsonschema
-jupyter
-jupyter-client
-jupyter-console
-jupyter-core
-jupyterlab-pygments
-jupyterlab-widgets
-keras
-kiwisolver
-lazy-object-proxy
-libclang
-lime
-llvmlite
-Markdown
-MarkupSafe
-matplotlib
-matplotlib-inline
-mccabe
-mistune
-mizani
-multiprocess
-nbclient
-nbconvert
-nbformat
-nest-asyncio
-networkx
-notebook
-numba
-numpy
-oauthlib
-opencv-python
-opencv-python-headless
-openpyxl
-opt-einsum
-packaging
-palettable
-pandas
-pandocfilters
-parso
-patsy
-pickleshare
+# flasgger
+# Flask
+# Flask-Compress
+# Flask-Cors
+# Flask-PyMongo
+# Flask-RESTful
+# flask-swagger-ui
+# flatbuffers
+# fonttools
+# gast
+# gevent
+# google-auth
+# google-auth-oauthlib
+# google-pasta
+# greenlet
+# grpcio
+# gunicorn
+# h11
+# h5py
+# httptools
+# idna
+# imageio
+# imutils
+# interpret
+# interpret-core
+# ipykernel
+# ipython
+# ipython-genutils
+# ipywidgets
+# isort
+# itsdangerous
+# jedi
+# Jinja2
+# joblib
+# jsonschema
+# jupyter
+# jupyter-client
+# jupyter-console
+# jupyter-core
+# jupyterlab-pygments
+# jupyterlab-widgets
+# keras
+# kiwisolver
+# lazy-object-proxy
+# libclang
+# lime
+# llvmlite
+# Markdown
+# MarkupSafe
+# matplotlib
+# matplotlib-inline
+# mccabe
+# mistune
+# mizani
+# multiprocess
+# nbclient
+# nbconvert
+# nbformat
+# nest-asyncio
+# networkx
+# notebook
+# numba
+# numpy
+# oauthlib
+# opencv-python
+# opencv-python-headless
+# openpyxl
+# opt-einsum
+# packaging
+# palettable
+# pandas
+# pandocfilters
+# parso
+# patsy
+# pickleshare
 Pillow
-pipreqs
-platformdirs
-plotly
-plotnine
-prometheus-client
-prompt-toolkit
-protobuf
-psutil
-pure-eval
-pyasn1
-pyasn1-modules
-pycodestyle
-pycparser
-pydantic
-Pygments
-pylint
-pymongo
-pyparsing
-# pypiwin32
-pyrsistent
-pytesseract
-python-dateutil
+# pipreqs
+# platformdirs
+# plotly
+# plotnine
+# prometheus-client
+# prompt-toolkit
+# protobuf
+# psutil
+# pure-eval
+# pyasn1
+# pyasn1-modules
+# pycodestyle
+# pycparser
+# pydantic
+# Pygments
+# pylint
+# pymongo
+# pyparsing
+# # pypiwin32
+# pyrsistent
+# pytesseract
+# python-dateutil
 python-dotenv
-python-multipart
-pytz
-PyWavelets
-# pywin32
-# pywinpty
-PyYAML
-pyzmq
-qtconsole
-QtPy
-requests
-requests-oauthlib
-rsa
-SALib
-scikit-image
-scikit-learn
-scipy
-seaborn
-Send2Trash
-shap
-six
-sklearn
-skope-rules
-slicer
-sniffio
-soupsieve
-stack-data
-starlette
-statsmodels
-tenacity
-tensorboard
-tensorboard-data-server
-tensorboard-plugin-wit
-tensorflow
-tensorflow-estimator
-tensorflow-intel
-tensorflow-io-gcs-filesystem
-termcolor
-terminado
-testpath
-threadpoolctl
-tifffile
-toml
-tornado
-tqdm
-traitlets
-treeinterpreter
-typing_extensions
-tzdata
-urllib3
-uvicorn
-watchfiles
-wcwidth
-webencodings
-websockets
-Werkzeug
-widgetsnbextension
-wrapt
-yarg
-zope.event
-zope.interface
+# python-multipart
+# pytz
+# PyWavelets
+# # pywin32
+# # pywinpty
+# PyYAML
+# pyzmq
+# qtconsole
+# QtPy
+# requests
+# requests-oauthlib
+# rsa
+# SALib
+# scikit-image
+# scikit-learn
+# scipy
+# seaborn
+# Send2Trash
+# shap
+# six
+# sklearn
+# skope-rules
+# slicer
+# sniffio
+# soupsieve
+# stack-data
+# starlette
+# statsmodels
+# tenacity
+# tensorboard
+# tensorboard-data-server
+# tensorboard-plugin-wit
+# tensorflow
+# tensorflow-estimator
+# tensorflow-intel
+# tensorflow-io-gcs-filesystem
+# termcolor
+# terminado
+# testpath
+# threadpoolctl
+# tifffile
+# toml
+# tornado
+# tqdm
+# traitlets
+# treeinterpreter
+# typing_extensions
+# tzdata
+# urllib3
+# uvicorn
+# watchfiles
+# wcwidth
+# webencodings
+# websockets
+# Werkzeug
+# widgetsnbextension
+# wrapt
+# yarg
+# zope.event
+# zope.interface
