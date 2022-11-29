@@ -133,7 +133,7 @@ Pillow
 # pytesseract
 # python-dateutil
 python-dotenv
-# python-multipart
+python-multipart
 # pytz
 # PyWavelets
 # # pywin32
