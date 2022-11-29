@@ -182,7 +182,7 @@ python-dotenv
 # typing_extensions
 # tzdata
 # urllib3
-# uvicorn
+uvicorn
 # watchfiles
 # wcwidth
 # webencodings
