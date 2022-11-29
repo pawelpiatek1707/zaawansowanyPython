@@ -50,7 +50,7 @@ fastapi
 # google-pasta
 # greenlet
 # grpcio
-# gunicorn
+gunicorn
 # h11
 # h5py
 # httptools
