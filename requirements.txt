@@ -136,8 +136,8 @@ python-dotenv
 python-multipart
 pytz
 PyWavelets
-pywin32
-pywinpty
+# pywin32
+# pywinpty
 PyYAML
 pyzmq
 qtconsole
