@@ -128,7 +128,7 @@ Pygments
 pylint
 pymongo
 pyparsing
-pypiwin32
+# pypiwin32
 pyrsistent
 pytesseract
 python-dateutil
